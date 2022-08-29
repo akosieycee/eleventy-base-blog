@@ -17,8 +17,8 @@
   </head>
   <body>
     <header>
+      <p><img src="https://lh3.googleusercontent.com/seW26v7TY97EWTkpfCo4LCn_xFhGYLRFvtmSyTLMaQwIpp9ukQJtQ4fGA2eB0lUA6o7lqFGUFulphl_cIHBJr71kJkM1eBOVfPSQmBGIDScEoWBuWoIt3J5sWf7clhMeatdLw6lHBeR1R6WzYc1DhiyqqjZCo7-sboNrv5YiHTi2f31-vIa9B6_T0iAv0Zfy4BBw9hS2cOl2oFtQUwHQSo4vSB8dtpYYU7yNrorqrKThofzg3cmb1dKOj9W3ZwYimmm3Ig3HnL0rEGYdZXwEy-uk5--tTt9kbt5E3XooXAJ4qw6WAxki06Ng2GOx7K9deQE02rCuIYCrNyZaOGyfgdk6ooGfhbRRyy-Fe1jurWYMOVx5zUD03wKzODAIN_sGBLXrUBdwhTX-nnk4oiWq1jB_btfzgt0So0ZXKynYVsNDg28d2fBwPxT1cmgdUIbtwu3InJ4SuNSN6DwCAIjjIKlcawQvwMAPk8kEHgOnFEgnIK-j-bZ2B4_3WjA0JM4cJJpXcdoGPdoZcf8miG2woLBehsdteKEDu2sGyhdK1Jwg6iXBzmj_aJJyxCdpKgfLSwfPZ5w3riP276U-hY-hHdRTAaSD5-kkgaHB9gdntXMSnNRMdE99z1ALNBlIn8SSCFKbv14uFNDoTj55_q3oyKt-V7gesddzOrDf2GQTLrFMDV8G6E0V_OKXL9YXvHzBaNlKShijJzYPjISjsua6xeyClCtgxIVyrJEoe02PvF6_7_c-D0wEXAHqiENk_Q=s165-no?authuser=0"></p>
       <h1 class="home"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
-
       {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
       <ul class="nav">
       {%- for entry in collections.all | eleventyNavigation %}
@@ -30,14 +30,7 @@
     <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
 
       <!-- Delete this message -->
-      <div class="infobox">
-        <ol>
-          <li>Edit the <code>_data/metadata.json</code> with your blog’s information.</li>
-          <li>(Optional) Edit <code>.eleventy.js</code> with your <a href="https://www.11ty.dev/docs/config/">configuration preferences</a>.</li>
-          <li>Delete this message from <code>_includes/layouts/base.njk</code>.</li>
-        </ol>
-        <p><em>This is an <a href="https://www.11ty.dev/">Eleventy project</a> created from the <a href="https://github.com/11ty/eleventy-base-blog"><code>eleventy-base-blog</code> repo</a>.</em></p>
-      </div>
+    
       <!-- Stop deleting -->
 
       {{ content | safe }}
