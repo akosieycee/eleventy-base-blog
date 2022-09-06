@@ -19,7 +19,7 @@
   </head>
   <body>
     <header>
-      <p><img src="https://lh3.googleusercontent.com/seW26v7TY97EWTkpfCo4LCn_xFhGYLRFvtmSyTLMaQwIpp9ukQJtQ4fGA2eB0lUA6o7lqFGUFulphl_cIHBJr71kJkM1eBOVfPSQmBGIDScEoWBuWoIt3J5sWf7clhMeatdLw6lHBeR1R6WzYc1DhiyqqjZCo7-sboNrv5YiHTi2f31-vIa9B6_T0iAv0Zfy4BBw9hS2cOl2oFtQUwHQSo4vSB8dtpYYU7yNrorqrKThofzg3cmb1dKOj9W3ZwYimmm3Ig3HnL0rEGYdZXwEy-uk5--tTt9kbt5E3XooXAJ4qw6WAxki06Ng2GOx7K9deQE02rCuIYCrNyZaOGyfgdk6ooGfhbRRyy-Fe1jurWYMOVx5zUD03wKzODAIN_sGBLXrUBdwhTX-nnk4oiWq1jB_btfzgt0So0ZXKynYVsNDg28d2fBwPxT1cmgdUIbtwu3InJ4SuNSN6DwCAIjjIKlcawQvwMAPk8kEHgOnFEgnIK-j-bZ2B4_3WjA0JM4cJJpXcdoGPdoZcf8miG2woLBehsdteKEDu2sGyhdK1Jwg6iXBzmj_aJJyxCdpKgfLSwfPZ5w3riP276U-hY-hHdRTAaSD5-kkgaHB9gdntXMSnNRMdE99z1ALNBlIn8SSCFKbv14uFNDoTj55_q3oyKt-V7gesddzOrDf2GQTLrFMDV8G6E0V_OKXL9YXvHzBaNlKShijJzYPjISjsua6xeyClCtgxIVyrJEoe02PvF6_7_c-D0wEXAHqiENk_Q=s165-no?authuser=0"></p>
+      <p><img src="img/eyceelogo.jpg" alt="Aldous's Logo">
       <h1 class="home"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
       {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
       <ul class="nav">
@@ -27,6 +27,43 @@
         <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
       {%- endfor %}
       </ul>
+      <nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Aldous' Blog</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Archive</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Me</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            My Blog Posts
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">First Post</a></li>
+            <li><a class="dropdown-item" href="#">Second Post</a></li>
+            <li><a class="dropdown-item" href="#">Third Post</a></li>
+            <li><a class="dropdown-item" href="#">Fourth Post</a></li>
+            <li><a class="dropdown-item" href="#">Fifth Post</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
     </header>
 
     <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
