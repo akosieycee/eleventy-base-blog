@@ -67,7 +67,32 @@
     </header>
 
     <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
-
+    <section>
+    <h2>Here are some cute pictures of my dogs</h2>
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/Cooper1.jpeg" class="d-block w-100" alt="Cute chug">
+    </div>
+    <div class="carousel-item">
+      <img src="img/Bradley1.jpeg" class="d-block w-100" alt="Cute Schnaupin">
+    </div>
+    <div class="carousel-item">
+      <img src="img/Cooper2.jpeg" class="d-block w-100" alt="Super cute chug">
+    </div>
+        <div class="carousel-item">
+      <img src="img/Bradley2.jpeg" class="d-block w-100" alt="Super cute Schnaupin">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
       <!-- Delete this message -->
     
       <!-- Stop deleting -->
