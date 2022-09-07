@@ -93,6 +93,33 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+<!-- form -->
+<section>
+<form name="contact" method="POST" data-netlify="true">
+  <p>
+    <label>First Name: <input type="text" name="name" required/></label>
+  </p>
+   <p>
+    <label>Last Name: <input type="text" name="name" required/></label>
+  </p>
+  <p>
+    <label>Your Email: <input type="email" name="email" required/></label>
+  </p>
+  <p>
+    <label>Your Role: <select name="role[]" multiple>
+      <option value="leader">Leader</option>
+      <option value="follower">Follower</option>
+    </select></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message" placeholder="Tell us something about yourself"></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
+</section>
+
       <!-- Delete this message -->
     
       <!-- Stop deleting -->
